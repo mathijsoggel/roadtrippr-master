@@ -1,0 +1,95 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 300;
+}
+
+#main-panel {
+  background: #272727;
+  width: 340px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.26);
+}
+
+#main-panel #locationList {
+  list-style: none;
+  padding: 0;
+  height: calc(100% - 55px);
+  overflow-y: auto;
+  margin: 0;
+}
+
+#main-panel ul li {
+  padding: 10px 10px 10px 30px;
+  width: 100%;
+  float: left;
+}
+
+#main-panel ul .handle {
+  width: 30px;
+  height: 30px;
+  background: #494949;
+  border-radius: 20px;
+  display: inline-block;
+  color: #D6D6D6;
+  padding: 3px 0;
+  text-align: center;
+  float: left;
+  cursor: move;
+}
+
+#main-panel ul .name {
+  padding: 0 10px;
+  float: left;
+  margin: 3px 0 0 0;
+}
+
+#main-panel ul .options .delete {
+  width: 20px;
+  height: 20px;
+  background: url("/img/trash.png") no-repeat;
+  background-size: 13px;
+  display: inline-block;
+  background-position: center;
+  margin: 5px 0 0 0;
+  float: left;
+  cursor: pointer;
+}
+
+#main-panel .add-location {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  border-top: 2px solid #656565;
+  padding-top: 7px;
+}
+
+#main-panel .add-location input[type="text"] {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 290px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  left: 340px;
+  height: 100%;
+  width: calc(100% - 340px);
+}
+
+#templates {
+  display: none;
+}
+
